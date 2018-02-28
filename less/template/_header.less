@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  .flex-column;
+  .flex-space-between;
+  .flex-nowrap;
+
+  &.site-branding,
+  &.site-navigation,
+  &.social-navigation {
+    flex: 0 1 auto;
+  }
+}
+
+.site-branding {
+  align-self: flex-start;
+}
+
+.site-navigation {
+  align-self: flex-center;
+}
+
+.social-navigation {
+  align-self: flex-end;
+}
