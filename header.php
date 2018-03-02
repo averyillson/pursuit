@@ -39,18 +39,17 @@
 					</nav><!-- #site-navigation -->
 
 					<nav class="social-navigation">
-						<a href="https://www.twitter.com/sa_roar">Twitter</a>
-						<a href="https://www.instagram.com/sa_roar">Instagram</a>
+						<a href="https://www.twitter.com/sa_roar"><span class="icon-twitter"></span></a>
+						<a href="https://www.instagram.com/sa_roar"><span class="icon-instagram"></span></a>
 					</nav>
-
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 				</header><!-- #masthead -->
+				<button class="none-l menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 			</div>
 
 			<div class="col-11 col-10-l">
 				<div id="page" class="site">
 					<div id="content" class="site-content">
-						<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pursuit' ); ?></a>
+						<a class="skip-link sr" href="#content"><?php esc_html_e( 'Skip to content', 'pursuit' ); ?></a>
 
 		</div>
 	</div>
