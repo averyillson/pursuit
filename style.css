@@ -32,8 +32,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: Abel;
-  src: url('../pursuit/fonts/general/Abel-Regular.tff');
+  font-family: Lato;
+  src: url('../pursuit/fonts/general/Lato-Black.ttf');
   font-weight: 300;
   font-style: normal;
 }
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 h1,
@@ -195,6 +195,8 @@ h1,
   font-size: 2rem;
   line-height: 38px;
   line-height: 2.375rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
 }
 h2,
 .fs-2 {
@@ -2941,11 +2943,11 @@ p:first-child:first-letter,
   color: #3E3E3E;
   float: left;
   font-family: 'brand';
-  font-size: 175px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  font-size: 5rem;
+  line-height: 3.75rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.1875rem;
 }
 header {
   display: flex;

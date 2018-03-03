@@ -44,11 +44,11 @@
 					</nav>
 				</header><!-- #masthead -->
 				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-				<nav id="-navigation" class="none-l mobile-navigation">
+				<nav id="site-navigation" class="none-l mobile-navigation">
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
+							'menu_id'        => 'mobil-menu',
 						) );
 					?>
 				</nav><!-- #site-navigation -->
