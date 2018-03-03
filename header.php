@@ -43,12 +43,12 @@
 						<a href="https://www.instagram.com/sa_roar"><span class="icon-instagram"></span></a>
 					</nav>
 				</header><!-- #masthead -->
-				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-menu"></span></button>
 				<nav id="site-navigation" class="none-l mobile-navigation">
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
-							'menu_id'        => 'mobil-menu',
+							'menu_id'        => 'mobile-menu',
 						) );
 					?>
 				</nav><!-- #site-navigation -->
