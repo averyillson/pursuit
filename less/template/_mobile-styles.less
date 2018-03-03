@@ -1,2 +1,65 @@
 .site-branding {
+  margin-bottom: 2rem;
+
+  &:before {
+    content: "SE";
+    font-family: 'brand', sans-serif;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    line-height: 5rem;
+    display: block;
+    max-width: 60px;
+    height: 60px;
+    top: 1rem;
+    position: relative;
+    margin: 0;
+    padding-left: .75rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: transparent;
+    display: block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 1rem;
+  }
+
+
+}
+
+.menu-toggle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4.75rem;
+  width: 4.75rem;
+  background-color: pink;
+  z-index: 9999;
+}
+
+.site-footer {
+  height: 4.75rem;
+}
+
+.social-navigation {
+  height: 10rem;
+  position: relative;
+
+  a {
+    display: block;
+    height: 3rem;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+  }
 }

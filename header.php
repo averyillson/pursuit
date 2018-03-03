@@ -23,13 +23,13 @@
 <body <?php body_class(); ?>>
 	<div class="container-full">
 		<div class="row clear">
-			<div class="col-1 col-2-l">
+			<div class="col-2 col-2-l">
 				<header id="masthead" class="site-header">
 					<div class="site-branding">
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div><!-- .site-branding -->
 
-					<nav id="site-navigation" class="main-navigation">
+					<nav id="site-navigation" class="none block-l main-navigation">
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'menu-1',
@@ -43,10 +43,18 @@
 						<a href="https://www.instagram.com/sa_roar"><span class="icon-instagram"></span></a>
 					</nav>
 				</header><!-- #masthead -->
-				<button class="none-l menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<nav id="-navigation" class="none-l mobile-navigation">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+				</nav><!-- #site-navigation -->
 			</div>
 
-			<div class="col-11 col-10-l">
+			<div class="col-10 col-10-l">
 				<div id="page" class="site">
 					<div id="content" class="site-content">
 						<a class="skip-link sr" href="#content"><?php esc_html_e( 'Skip to content', 'pursuit' ); ?></a>
