@@ -45,12 +45,10 @@
 				</header><!-- #masthead -->
 				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-menu"></span></button>
 				<nav id="site-navigation" class="none-l mobile-navigation">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'mobile-menu',
-						) );
-					?>
+					<a href="/about"><span class="icon-profile"></span></a>
+					<a href="/stories"><span class="icon-pen"></span></a>
+					<a href="/photos"><span class="icon-camera"></span></a>
+					<a href="/video"><span class="icon-video-camera"></span></a>
 				</nav><!-- #site-navigation -->
 			</div>
 

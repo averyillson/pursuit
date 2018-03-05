@@ -2973,8 +2973,8 @@ p:first-child:first-letter,
   color: #3E3E3E;
   float: left;
   font-family: 'brand';
-  font-size: 5rem;
-  line-height: 3.75rem;
+  font-size: 9rem;
+  line-height: 8.5rem;
   padding-top: 0.25rem;
   padding-right: 0.5rem;
   padding-left: 0.1875rem;
@@ -3000,6 +3000,9 @@ header.social-navigation {
   align-self: flex-start;
 }
 @media screen and (max-width: 720px) {
+  /*
+ * Heading Styles
+ */
   .site-branding {
     margin-bottom: 2rem;
   }
@@ -3015,7 +3018,7 @@ header.social-navigation {
     top: 1rem;
     position: relative;
     margin: 0;
-    padding-left: .75rem;
+    padding-left: .5rem;
   }
   .site-branding a {
     text-decoration: none;
@@ -3032,27 +3035,29 @@ header.social-navigation {
     left: 0;
     height: 4.75rem;
     width: 4.75rem;
-    background-color: transparent;
+    background-color: #fff;
     z-index: 9999;
     border: none;
   }
   .menu-toggle .icon-menu {
     display: block;
-    height: 3rem;
-    font-size: 3rem;
+    height: 2rem;
+    font-size: 2rem;
     text-decoration: none;
   }
-  .site-footer {
-    height: 4.75rem;
-  }
   .social-navigation {
+    display: flex;
     height: 10rem;
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-left: .5rem;
   }
   .social-navigation a {
     display: block;
-    height: 3rem;
-    font-size: 3rem;
+    height: 2rem;
+    font-size: 2rem;
     text-decoration: none;
     margin-bottom: 2.5rem;
   }
@@ -3061,6 +3066,46 @@ header.social-navigation {
   }
   .social-navigation a:first-of-type {
     margin-top: 1rem;
+  }
+  .mobile-navigation {
+    list-style: none;
+    display: flex;
+    padding-left: .5rem;
+    position: fixed;
+    bottom: -400px;
+    height: 360px;
+    transition: 1s all ease;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .mobile-navigation.open {
+    transition: .5s all ease;
+    bottom: 0;
+  }
+  .mobile-navigation a {
+    flex: 0 1 auto;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    height: 2rem;
+    font-size: 2rem;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*
+ * Body/Content Styles
+ */
+  .entry-title {
+    text-align: center;
+  }
+  /*
+ * Footer Styles
+ */
+  .site-footer {
+    height: 4.75rem;
   }
 }
 @media screen and (min-width: 960px) {
