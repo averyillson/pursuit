@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 	<div class="container-full">
 		<div class="row clear">
-			<div class="col-2 col-2-l">
+			<div class="col-2  col-1-m col-2-l col-2-xl">
 				<header id="masthead" class="site-header">
 					<div class="site-branding">
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -43,7 +43,7 @@
 						<a href="https://www.instagram.com/sa_roar"><span class="icon-instagram"></span></a>
 					</nav>
 				</header><!-- #masthead -->
-				<button class="none-m menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-menu"></span></button>
+				<button class="none-l menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-menu"></span></button>
 				<nav id="site-navigation" class="none-l mobile-navigation">
 					<a href="/about"><span class="icon-profile"></span></a>
 					<a href="/stories"><span class="icon-pen"></span></a>
@@ -52,7 +52,7 @@
 				</nav><!-- #site-navigation -->
 			</div>
 
-			<div class="col-10 col-10-l">
+			<div class="col-10 col-11-m col-10-l col-10-xl">
 				<div id="page" class="site">
 					<div id="content" class="site-content">
 						<a class="skip-link sr" href="#content"><?php esc_html_e( 'Skip to content', 'pursuit' ); ?></a>

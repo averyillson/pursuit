@@ -5,12 +5,13 @@
 // Global Swatches
 @footer:                                        transparent;
 @black:                                         #3E3E3E;
+@paper:                                         #ECECEC;
 
 // Global Typography
 @dropcap:                                       'brand';
 @heading:                                       'Lato', sans-serif;
 @copy:                                          'Playfair Display Reg', serif;
-@base-background-color:                         #fff;
+@base-background-color:                         @paper;
 @base-font-family:                              @copy;
 @base-font-size:                                16;
 @base-line-height:                              22;
@@ -76,7 +77,7 @@
 @container:                                     100%;
 @container-m:                                   720px;
 @container-l:                                   960px;
-@container-xl:                                  1120px;
+@container-xl:                                  1440px;
 
 // Grid Gutters
 @grid-gutter:                                   15px;
@@ -85,6 +86,6 @@
 @grid-gutter-xl:                                15px;
 
 // Responsive Breakpoints
-@breakpoint-m:                                  (@container-m + 20);
-@breakpoint-l:                                  (@container-l + 20);
-@breakpoint-xl:                                 (@container-xl + 20);
+@breakpoint-m:                                  (@container-m);
+@breakpoint-l:                                  (@container-m + 20);
+@breakpoint-xl:                                 (@container-l + 20);

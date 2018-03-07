@@ -12,6 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_date( 'l, F j, Y', '<h2 class="entry-date">', '</h2>') ?>
+		<span class="post-location" >Posted in Orlando, Fla.</span>
 	</header><!-- .entry-header -->
 
 	<?php pursuit_post_thumbnail(); ?>
