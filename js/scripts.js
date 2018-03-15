@@ -14,4 +14,8 @@ $(function() {
   if ( $('.menu-toggle') ) {
     toggleMobileMenu( $('.menu-toggle'),'open', $('.mobile-navigation'));
   }
+
+  if ( $('.accordion-menu') ) {
+    toggleMobileMenu( $('.accordion-menu'),'open', $('#submenu') );
+  }
 });

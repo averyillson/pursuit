@@ -29,27 +29,12 @@
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div><!-- .site-branding -->
 
-					<nav id="site-navigation" class="none block-l main-navigation">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							) );
-						?>
-					</nav><!-- #site-navigation -->
+					<?php get_template_part('nav-desktop'); ?>
+					<?php get_template_part('nav-social'); ?>
 
-					<nav class="social-navigation">
-						<a href="https://www.twitter.com/sa_roar"><span class="icon-twitter"></span></a>
-						<a href="https://www.instagram.com/sa_roar"><span class="icon-instagram"></span></a>
-					</nav>
 				</header><!-- #masthead -->
 				<button class="none-l menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="icon-menu"></span></button>
-				<nav id="site-navigation" class="none-l mobile-navigation">
-					<a href="/about"><span class="icon-profile"></span></a>
-					<a href="/stories"><span class="icon-pen"></span></a>
-					<a href="/photos"><span class="icon-camera"></span></a>
-					<a href="/video"><span class="icon-video-camera"></span></a>
-				</nav><!-- #site-navigation -->
+				<?php get_template_part('nav-mobile'); ?>
 			</div>
 
 			<div class="col-10 col-11-m col-10-l col-10-xl">

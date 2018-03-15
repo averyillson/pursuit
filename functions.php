@@ -130,6 +130,18 @@ function pursuit_scripts() {
 add_action( 'wp_enqueue_scripts', 'pursuit_scripts' );
 
 /**
+ * Making jQuery to load from Google Library
+ */
+function replace_jquery() {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'replace_jquery');
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -155,15 +167,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-/**
- * Making jQuery to load from Google Library
- */
-function replace_jquery() {
-	if (!is_admin()) {
-		wp_deregister_script('jquery');
-		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1');
-		wp_enqueue_script('jquery');
-	}
-}
-add_action('init', 'replace_jquery');

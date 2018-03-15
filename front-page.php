@@ -16,8 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-			<div class="container">
+			<div class="container-fluid">
 				<div class="clear row">
 					<?php
 					while ( have_posts() ) : the_post();
@@ -28,7 +27,6 @@ get_header(); ?>
 					?>
 				</div>
 			</div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
