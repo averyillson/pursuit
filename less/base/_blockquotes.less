@@ -7,6 +7,7 @@ blockquote,
   font-weight: @base-font-weight;
   font-style: italic;
   margin: 20px 0;
+  padding: 0 .25rem;
   p {
     .font-size(@base-blockquote-font-size);
     .line-height(@base-blockquote-line-height);
@@ -16,6 +17,14 @@ blockquote,
     .font-size(@base-font-size - 3);
     .line-height(@base-line-height - 3);
     font-weight: 700;
+    font-style: normal;
+  }
+  &.sm,
+  &.md,
+  &.lg {
+    text-align: center;
+  }
+  .quote-author {
     font-style: normal;
   }
 }

@@ -6,6 +6,46 @@
  * Body/Content Styles
  */
 
+.entry-header {
+  margin-bottom: .75rem;
+}
+
+.divider {
+  margin: 2rem 0;
+}
+
+.quote-container {
+
+  .divider:first-child {
+    margin-top: 0;
+  }
+
+  .divider:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
+.sm,
+.md {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.lg {
+  font-size: 2.75rem;
+  line-height: 4rem;
+}
+
+.caption {
+
+  &:after {
+    content: "";
+    .none;
+    margin-top: .75rem;
+    border-bottom: @ink 1px solid;
+  }
+}
+
 /*
  * Footer Styles
  */

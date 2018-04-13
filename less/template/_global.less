@@ -1,5 +1,5 @@
 body {
-  position: absolute;
+  .absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -18,10 +18,9 @@ body {
   text-align: center;
 }
 
-p:first-child::first-letter,
-.dropcap-alt {
+.dropcap {
   color: @paper;
-  float: left;
+  .left;
   font-family: 'brand';
   font-size: 9rem;
   line-height: 7.5rem;
@@ -30,16 +29,35 @@ p:first-child::first-letter,
   margin-right: 1rem;
 }
 
-/*
-p:first-child:first-letter,
-.dropcap {
-  color: @black;
-  float: left;
-  font-family: @dropcap;
-  font-size: 9rem;
-  line-height: 8.5rem;
-  padding-top: 0.25rem;
-  padding-right: 0.5rem;
-  padding-left: 0.1875rem;
+.caption {
+  .block;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
 }
-*/
+
+.divider {
+  .block;
+  height: 0.125rem;
+  width: 100%;
+  background-color: @ink;
+}
+
+.quote-contianer {
+  display: flex;
+  .flex-column;
+  .flex-nowrap;
+  .flex-space-between;
+  align-items: stretch;
+  align-content: stretch;
+  height: auto;
+
+  blockquote,
+  .divider {
+    flex: 0 1 auto;
+  }
+
+  .divider:last-child {
+    margin-bottom: 2rem;
+    align-self: flex-end;
+  }
+}

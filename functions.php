@@ -117,7 +117,7 @@ add_action( 'widgets_init', 'pursuit_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pursuit_scripts() {
-	wp_enqueue_style( 'pursuit-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'pursuit-style', get_stylesheet_uri(), array(), '2.0.1' );
 
 	wp_enqueue_script( 'pursuit-navigation', get_template_directory_uri() . '/js/scripts.js', array(), '20151215', true );
 
@@ -167,3 +167,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Remove Auto Paragraph
+ */
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
