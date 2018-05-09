@@ -150,6 +150,11 @@
 
 // Images
 .img-fluid { max-width: 100%; }
+.img-round {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
 
 // Form
 .field { width: 100%; }
@@ -233,7 +238,7 @@
 
 // Tablet Helpers
 @media only screen and (min-width: @breakpoint-m) {
-  
+
   // General Resets
   .no-float-m { float: none; }
   .no-padding-m { padding: 0; }
@@ -266,7 +271,7 @@
   // Floats
   .left-m { float: left; }
   .right-m { float: right; }
-  
+
   // Alignment
   .center-m {
     float: none;
@@ -331,7 +336,7 @@
 
 // Desktop Helpers
 @media only screen and (min-width: @breakpoint-l) {
-  
+
   // General Resets
   .no-float-l { float: none; }
   .no-padding-l { padding: 0; }

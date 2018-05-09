@@ -10,7 +10,7 @@
 
 <nav id="site-navigation" class="none-l mobile-navigation">
   <a href="/about"><span class="icon-profile"></span></a>
-  <a href="/stories"><span class="icon-pen"></span></a>
-  <a href="/photos"><span class="icon-camera"></span></a>
-  <a href="/video"><span class="icon-video-camera"></span></a>
+  <a href="/category/projects"><span class="icon-pen"></span></a>
+  <a href="/category/singles"><span class="icon-camera"></span></a>
+  <a href="/category/video"><span class="icon-video-camera"></span></a>
 </nav><!-- #site-navigation -->

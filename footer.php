@@ -13,7 +13,7 @@
 
 					<footer id="colophon" class="site-footer">
 						<div class="site-info">
-							 &copy; Sarah Espedido, <?php echo date('Y'); ?> | All Rights Reserved.
+							&copy; Sarah Espedido, <?php echo date('Y'); ?> | All Rights Reserved.
 						</div><!-- .site-info -->
 					</footer><!-- #colophon -->
 				</div><!-- #content -->

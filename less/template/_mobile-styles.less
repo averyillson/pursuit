@@ -179,6 +179,144 @@ h3 {
   line-height: 3rem;
 }
 
+.nameplate {
+  .col-12;
+  .center;
+  .flex-column;
+  .flex-space-around;
+  height: 9.375rem;
+  display: flex;
+  align-content: stretch;
+  padding: 0;
+
+  .intro,
+  .edition {
+    .col-12;
+    .uppercase;
+    .text-center;
+    font-family: @heading;
+    letter-spacing: .125rem;
+    font-size: .75rem;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+
+    &:before {
+      .block;
+      content: '';
+      height: 1rem;
+      width: 80%;
+      background-color: @paper;
+      position: relative;
+      z-index: -1;
+      margin: 0 auto -0.75rem;
+    }
+
+    &:after {
+      .block;
+      content: '';
+      border-top: 2px solid @ink;
+      margin-top: -0.75rem;
+      width: 100%;
+      position: relative;
+      z-index: -2;
+    }
+  }
+
+  .edition:before {
+    width: 50%;
+  }
+
+  .plate-t,
+  .plate-m,
+  .plate-b {
+    flex: 0 1 auto;
+  }
+
+  .plate-l,
+  .plate-c,
+  .plate-r {
+    .text-center;
+    .uppercase;
+  }
+
+  .plate-l,
+  .plate-r {
+    .col-2;
+    font-size: .75rem;
+    font-family: @heading;
+    padding: 0;
+  }
+
+  .plate-c {
+    .col-8;
+    font-family: @dropcap;
+    font-size: 3.175rem;
+    letter-spacing: .175rem;
+  }
+
+  .plate-m {
+    padding-top: 1.25rem;
+  }
+}
+
+.featured {
+  margin-top: 0.5rem;
+
+  a {
+    text-decoration: none;
+    .text-center;
+  }
+
+  .feat-container {
+    height: 37.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 2rem;
+    .flex-column;
+    .flex-end;
+    display: flex;
+    align-content: flex-end;
+
+    &:after {
+      display: block;
+      content: '';
+      background-color: @ink;
+      opacity: .7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+
+  .feat-title,
+  .feat-excerpt {
+    .text-center;
+    color: #fff;
+    flex: 0 1 auto;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .feat-title {
+    .uppercase;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+  }
+
+  .feat-excerpt {
+    font-size: 1.5rem;
+    letter-spacing: .175rem;
+    line-height: 1.75rem;
+  }
+
+}
+
 /*
  * Footer Styles
  */

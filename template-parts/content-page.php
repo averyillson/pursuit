@@ -17,8 +17,6 @@
 			<span class="post-location" >Posted in Orlando, Fla.</span>
 		</header><!-- .entry-header -->
 
-		<?php pursuit_post_thumbnail(); ?>
-
 		<div class="entry-content">
 			<?php
 				the_content();
