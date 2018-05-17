@@ -6,6 +6,7 @@
  * Body/Content Styles
  */
 
+// Project Specific
 .entry-header {
   padding: 1rem 0;
   border-bottom: 2px solid @ink;
@@ -124,6 +125,7 @@ blockquote,
   }
 }
 
+// Front Page Specific
 .nameplate {
   height: 9.375rem;
 
@@ -134,9 +136,75 @@ blockquote,
     .text-center;
     font-family: @heading;
     letter-spacing: .125rem;
+    padding: 0;
+  }
+
+  .intro {
+    &:before {
+      width: 55%;
+    }
+  }
+
+  .plate-l,
+  .plate-r {
+    .col-2;
+    font-size: 1.5rem;
+    letter-spacing: .25rem;
   }
 }
 
+.edition {
+  &:before {
+    width: 30%;
+  }
+}
+
+.featured {
+  .feat-container {
+    height: 50rem;
+  }
+}
+
+.recent-queue {
+  .single-link {
+    .single-preview {
+      height: 11.875rem;
+
+      &:hover {
+        background-size: 180%;
+      }
+    }
+  }
+}
+
+// Single Specific
+.single-item {
+  .col-4;
+
+  .single-thumbnail {
+    height: 210px;
+    background-size: 150%;
+
+    &:hover {
+      background-size: 190%;
+    }
+  }
+}
+
+// Project Specific
+.project-item {
+  .project-page-number {
+    .col-4;
+  }
+
+  .project-title {
+    .col-8;
+  }
+
+  .project-info {
+    .col-8;
+  }
+}
 /*
  * Footer Styles
  */

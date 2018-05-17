@@ -2,10 +2,11 @@
  * Heading Styles
  */
 
-/*
- * Body/Content Styles
- */
+ /*
+  * Body/Content Styles
+  */
 
+ // Project Specific
 .entry-header {
   margin-bottom: .75rem;
 }
@@ -43,6 +44,83 @@
     .none;
     margin-top: .75rem;
     border-bottom: @ink 1px solid;
+  }
+}
+
+// Front Page Specific
+.nameplate {
+  margin-bottom: 1rem;
+
+  .intro,
+  .edition {
+    font-size: 1.25rem;
+  }
+
+  .intro {
+    &:before {
+      width: 60%;
+    }
+  }
+
+  .edition {
+    &:before {
+      width: 40%;
+    }
+  }
+
+  .plate-l,
+  .plate-r {
+    font-size: 1rem;
+  }
+
+  .plate-c {
+    font-size: 5rem;
+  }
+}
+
+.recent-queue {
+  margin-top: -0.5rem;
+
+  .single-link {
+    .col-4;
+
+    &:after {
+      .block;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      border-right: dotted @ink 2px;
+    }
+
+    &:last-of-type {
+      &:after {
+        border-right: none;
+      }
+    }
+
+    .single-preview{
+      height: 9.375rem;
+      background-size: 130%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Single Specific
+.single-item {
+  .col-6;
+
+  .single-thumbnail {
+    height: 220px;
+  }
+}
+
+// Project Specific
+.project-item {  
+  .project-info {
+    .col-8;
   }
 }
 

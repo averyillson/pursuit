@@ -1,6 +1,9 @@
 /*
  * Heading Styles
  */
+html {
+  overflow-x: hidden;
+}
 
 .site-branding {
   margin-bottom: 2rem;
@@ -38,7 +41,7 @@
   height: 4.75rem;
   width: 4.75rem;
   background-color: @paper;
-  z-index: 9999;
+  z-index: 1000;
   border: none;
 
   .icon-menu {
@@ -108,6 +111,7 @@
  * Body/Content Styles
  */
 
+// Project Specific
 .entry-header {
   padding: 1rem 0;
   border-bottom: 2px solid @ink;
@@ -179,6 +183,7 @@ h3 {
   line-height: 3rem;
 }
 
+// Front Page Specific
 .nameplate {
   .col-12;
   .center;
@@ -223,9 +228,12 @@ h3 {
     }
   }
 
-  .edition:before {
-    width: 50%;
+  .edition {
+    &:before {
+      width: 50%;
+    }
   }
+
 
   .plate-t,
   .plate-m,
@@ -269,15 +277,16 @@ h3 {
   }
 
   .feat-container {
+    .flex-column;
+    .flex-end;
     height: 37.5rem;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 135%;
     padding: 1rem 2rem;
-    .flex-column;
-    .flex-end;
     display: flex;
     align-content: flex-end;
+    transition: all 1s ease;
 
     &:after {
       display: block;
@@ -290,6 +299,11 @@ h3 {
       right: 0;
       bottom: 0;
       z-index: 0;
+    }
+
+    &:hover {
+      background-size: 150%;
+      transition: all 1s ease;
     }
   }
 
@@ -317,10 +331,153 @@ h3 {
 
 }
 
+.single-link {
+  .col-12;
+  text-decoration: none;
+
+  .single-page {
+    .text-center;
+    .block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: .5rem;
+  }
+
+  .single-title {
+    .text-center;
+    .uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .single-preview {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 1rem;
+    transition: all 1s ease;
+
+    &:hover {
+      background-size: 130%;
+      transition: all 1s ease;
+    }
+  }
+}
+
+// Single Specific
+.single-item {
+  .col-12;
+  margin-bottom: 1.5rem;
+
+  .single-thumbnail {
+    height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 1s;
+
+    &:hover {
+      transition: all 1s;
+      background-size: 130%;
+    }
+  }
+}
+
+.featherlight-content {
+  .flex-column;
+  .flex-nowrap;
+  .container;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 1rem 0;
+
+  .featherlight-close,
+  .featherlight-inner {
+    .col-10;
+    .center;
+    position: relative;
+    flex: 0 1 auto;
+    height: 100%;
+
+    img {
+      .img-fluid;
+      margin-bottom: 1rem;
+      height: auto;
+    }
+
+    .single-caption {
+      color: @paper;
+    }
+  }
+
+  .featherlight-close {
+    height: 4rem;
+    margin-bottom: 2rem;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    background-color: transparent;
+    color: @paper;
+  }
+}
+
+.with-featherlight {
+  height: 100%;
+  width: 100%;
+
+  &:after {
+    content: '';
+    background-color: fadeout(@ink, 10%);
+    position: fixed;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Project Specific
+.project-item {
+  .project-image {
+    .block;
+    .center;
+    .img-fluid;
+    .img-round;
+  }
+
+  .project-page-number {
+    .col-12;
+    .text-center;
+    .block;
+    margin: .5rem 0;
+  }
+
+  .project-title {
+    .col-12;
+  }
+
+  .project-excerpt {
+    .col-12;
+  }
+
+  .project-info {
+    .col-12;
+  }
+}
+
 /*
  * Footer Styles
  */
 
- .site-footer {
-    height: 4.75rem;
-  }
+.site-footer {
+  height: 4.75rem;
+}

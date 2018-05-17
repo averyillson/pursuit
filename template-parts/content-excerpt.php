@@ -10,21 +10,15 @@
 ?>
 
 <div class="col-12">
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" class="project-item">
     <a href="<?php echo get_the_permalink(); ?>" class="post-link block">
       <div class="col-12 col-4-m col-4-l">
-        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="" class="img-fluid img-round block center">
+        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" class="project-image">
       </div>
-      <div class="col-12 col-8-m col-8-l">
-        <div class="col-12 col-4-l">
-					<span class="post-page">P. <?php echo the_ID(); ?></span>
-        </div>
-        <div class="col-12 col-8-l">
-          <?php the_title( '<h3 class="post-title">', '</h3>' ); ?>
-        </div>
-        <div class="col-12">
-          <span class="post-excerpt" ><?php the_excerpt(); ?></span>
-        </div>
+      <div class="project-info">
+				<span class="project-page-number">P. <?php echo the_ID(); ?></span>
+        <?php the_title( '<h3 class="project-title">', '</h3>' ); ?>
+        <span class="project-excerpt" ><?php the_excerpt(); ?></span>
       </div>
     </a>
 	</article><!-- #post- -->

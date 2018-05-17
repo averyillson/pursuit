@@ -62,26 +62,25 @@ get_header(); ?>
 
 				<div class="divider"></div>
 
-				<div class="col-12 center">
+				<div class="col-12 center no-padding">
 					<section class="recent-queue">
 						<div class="clear row">
 							<?php
 								$recentQuery = new WP_Query( array(
 									'category_name' => 'singles',
-									'posts_per_page'=> 4,
+									'posts_per_page'=> 3,
 
 								) );
 								if ( $recentQuery->have_posts() ) {
 									// The 2nd Loop
 									while ( $recentQuery->have_posts() ) {
 										$recentQuery->the_post(); ?>
-										<div class="col-12 col-4-m col-4-l">
+
 											<a href="<?php the_permalink(); ?>" class="single-link">
 												<span class="single-page">P. <?php echo get_the_ID(); ?></span>
 												<?php the_title('<h4 class="single-title">','</h4>'); ?>
-												<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid center">
+												<div class="single-preview" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>);"></div>
 											</a>
-										</div>
 									<?php }
 
 									// Restore original Post Data
