@@ -12,5 +12,5 @@
   <a href="/about"><span class="icon-profile"></span></a>
   <a href="/category/projects"><span class="icon-pen"></span></a>
   <a href="/category/singles"><span class="icon-camera"></span></a>
-  <a href="/category/video"><span class="icon-video-camera"></span></a>
+  <a href="/category/video" class="disabled"><span class="icon-video-camera"></span></a>
 </nav><!-- #site-navigation -->

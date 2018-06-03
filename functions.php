@@ -119,7 +119,7 @@ add_action( 'widgets_init', 'pursuit_widgets_init' );
 function pursuit_scripts() {
 	wp_enqueue_style( 'pursuit-style', get_stylesheet_uri(), array(), '2.0.1' );
 
-	wp_enqueue_script( 'pursuit-navigation', get_template_directory_uri() . '/js/scripts.js', array(), '20151215', true );
+	wp_enqueue_script( 'pursuit-navigation', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true );
 
 	wp_enqueue_script( 'pursuit-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

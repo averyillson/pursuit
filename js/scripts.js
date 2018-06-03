@@ -6,7 +6,7 @@ $(function() {
       menuList.toggleClass(triggerClass);
     }
 
-    trigger.click(function(){
+    trigger.click( function(){
       updateMenuClass();
     });
   }
@@ -19,3 +19,5 @@ $(function() {
     toggleMobileMenu( $('.accordion-menu'),'open', $('#submenu') );
   }
 });
+
+
